@@ -1,5 +1,4 @@
 .profile__info{
-  min-height: 73px;
   margin-left: 30px;
   display: grid;
   grid-template-columns: 294px auto;
@@ -7,13 +6,14 @@
   align-self: center;
   justify-items: start;
   gap: 16px 18px;
-  grid-template-areas:
-    "name edit-button"
-    "ocupation ocupation";
 }
 
-@media screen and (max-width: 581px) {
+@media screen and (max-width: 580px) {
   .profile__info{
-   margin: 26px 0 36px;
+    max-width: 282px;
+    margin: 26px 0 0;
+    justify-items: center;
+    gap: 14px 10px;
+    grid-template-columns: 189px auto;
   }
 }
