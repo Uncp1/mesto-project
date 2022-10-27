@@ -1,0 +1,10 @@
+.popup__exit-button{
+  background: url(../../../images/Close-Icon.svg);
+  width: 32px;
+  height: 32px;
+  border: none;
+  padding: 0;
+  position: relative;
+  bottom: 40px;
+  left: 438px;
+}

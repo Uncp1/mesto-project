@@ -1,0 +1,13 @@
+.form__input{
+  border: none;
+}
+
+textarea{
+  width: 358px;
+  height: 14px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
