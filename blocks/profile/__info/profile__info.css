@@ -1,11 +1,14 @@
 .profile__info{
   margin-left: 30px;
   display: grid;
-  grid-template-columns: 294px auto;
-  grid-template-rows: minmax(39px, max-content) minmax(18px, max-content);
+  grid-template-columns: 294px 24px;
+  grid-template-rows: minmax(41px, max-content) minmax(18px, max-content);
   align-self: center;
   justify-items: start;
-  gap: 16px 18px;
+  gap: 13px 18px;
+  grid-template-areas:
+  "name icon"
+  "oc oc";
 }
 
 @media screen and (max-width: 580px) {
@@ -13,7 +16,7 @@
     max-width: 282px;
     margin: 26px 0 0;
     justify-items: center;
-    gap: 14px 10px;
-    grid-template-columns: 189px auto;
+    gap: 0 10px;
+    grid-template-columns: 215px 18px;
   }
 }

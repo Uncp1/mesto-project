@@ -19,6 +19,7 @@
 @media screen and (max-width: 580px) {
   .form__button{
     max-width: 238px;
+    max-height: 46px;
     margin: 45px 22px 25px;
     font-size: 14px;
     line-height: 17px;

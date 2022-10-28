@@ -1,21 +1,17 @@
 .form__field{
   max-width: 358px;
-  margin: 30px auto 0;
-  border-bottom: 1px solid rgba(0, 0, 0, .2);
-  box-sizing: border-box;
 }
 
 .form__field:nth-child(2){
-  margin: 54px auto 0;
+  margin: 29px auto 0;
 }
 
 @media screen and (max-width: 580px) {
   .form__field{
     max-width: 238px;
-    margin: 30px auto 0;
   }
 
   .form__field:nth-child(2){
-    margin: 75px auto 0;
+    margin: 29px auto 0;
   }
 }
