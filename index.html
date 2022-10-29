@@ -12,98 +12,99 @@
       <img src="images/logo.svg" alt="логотип место Роиссия" class="header__logo">
     </header>
 
-    <section class="profile">
-      <div class="profile__container">
-        <img src="images/profile.jpg" alt="аватар профиля" class="profile__avatar">
-        
-        <div class="profile__info">
-          <h1 class="profile__name">Жак-Ив Кусто </h1>
+    <main>
+      <section class="profile">
+        <div class="profile__container">
+          <img src="images/profile.jpg" alt="аватар профиля" class="profile__avatar">
+          
+          <div class="profile__info">
+            <h1 class="profile__name">Жак-Ив Кусто </h1>
 
-          <button type="button" class="profile__edit-button"></button>
+            <button type="button" class="profile__edit-button"></button>
 
-          <p class="profile__occupation">Исследователь океана</p>
-       </div>
-      </div>
+            <p class="profile__occupation">Исследователь океана</p>
+        </div>
+        </div>
 
-      <button type="button" class="profile__add-button"></button>
-    </section>
+        <button type="button" class="profile__add-button"></button>
+      </section>
 
-    <section class="elements">
-     <div class="element">
-      <img src="images/kirill-pershin-1088404-unsplash.jpg" alt="заброшенный монастырь" class="element__pic">
-      <div class="element__info">
-        <h2 class="element__name">Карачаевск</h2>
-        <button type="button" class="element__like"></button>
-      </div>
-     </div>
-     
-     <div class="element">
-      <img src="images/kirill-pershin-1404681-unsplash.png" alt="Эльбрус вдалеке" class="element__pic">
-      <div class="element__info">
-        <h2 class="element__name">Гора Эльбрус</h2>
-        <button type="button" class="element__like"></button>
-      </div>
-     </div>
-
+      <section class="elements">
       <div class="element">
-        <img src="images/kirill-pershin-1556355-unsplash.png" alt="вид на гору и лес перед ней" class="element__pic">
+        <img src="images/kirill-pershin-1088404-unsplash.jpg" alt="заброшенный монастырь" class="element__pic">
         <div class="element__info">
-          <h2 class="element__name">Домбай</h2>
+          <h2 class="element__name">Карачаевск</h2>
           <button type="button" class="element__like"></button>
         </div>
-     </div>
-
-     <div class="element">
+      </div>
+      
+      <div class="element">
         <img src="images/kirill-pershin-1404681-unsplash.png" alt="Эльбрус вдалеке" class="element__pic">
         <div class="element__info">
           <h2 class="element__name">Гора Эльбрус</h2>
           <button type="button" class="element__like"></button>
         </div>
-     </div>
+      </div>
 
-     <div class="element">
-      <img src="images/kirill-pershin-1556355-unsplash.png" alt="вид на гору и лес перед ней" class="element__pic">
+        <div class="element">
+          <img src="images/kirill-pershin-1556355-unsplash.png" alt="вид на гору и лес перед ней" class="element__pic">
+          <div class="element__info">
+            <h2 class="element__name">Домбай</h2>
+            <button type="button" class="element__like"></button>
+          </div>
+      </div>
+
+      <div class="element">
+          <img src="images/kirill-pershin-1404681-unsplash.png" alt="Эльбрус вдалеке" class="element__pic">
+          <div class="element__info">
+            <h2 class="element__name">Гора Эльбрус</h2>
+            <button type="button" class="element__like"></button>
+          </div>
+      </div>
+
+      <div class="element">
+        <img src="images/kirill-pershin-1556355-unsplash.png" alt="вид на гору и лес перед ней" class="element__pic">
+          <div class="element__info">
+            <h2 class="element__name">Домбай</h2>
+            <button type="button" class="element__like"></button>
+          </div>
+      </div>
+
+      <div class="element">
+        <img src="images/kirill-pershin-1088404-unsplash.jpg" alt="заброшенный монастырь" class="element__pic">
         <div class="element__info">
-          <h2 class="element__name">Домбай</h2>
+          <h2 class="element__name">Карачаево-Черкесия</h2>
           <button type="button" class="element__like"></button>
         </div>
-     </div>
-
-     <div class="element">
-      <img src="images/kirill-pershin-1088404-unsplash.jpg" alt="заброшенный монастырь" class="element__pic">
-      <div class="element__info">
-        <h2 class="element__name">Карачаево-Черкесия</h2>
-        <button type="button" class="element__like"></button>
       </div>
-     </div>
-    </section>
+      </section>
 
-    <div class="popup ">
-      <button type="button" class="popup__exit-button"></button>
+      <div class="popup popup_opened">
+        <button type="button" class="popup__exit-button"></button>
 
-      <div class="popup__container">
-        <h2 class="popup__heading">Редактировать профиль</h2>
+        <div class="popup__container">
+          <h2 class="popup__heading">Редактировать профиль</h2>
 
-        <form class="form" name="user-form">
-          <div class="form__field">
-            <input type="text" class="form__input" id="form-name" 
-            name="form-name" placeholder="Жак-Ив Кусто">
+          <form class="form" name="user-form">
+            <div class="form__field">
+              <input type="text" class="form__input" id="form-name" 
+              name="form-name" placeholder="Жак-Ив Кусто">
 
-            <label for="form-name"></label>
-          </div>
+              <label for="form-name"></label>
+            </div>
 
-          <div class="form__field">
-            <input type="text" class="form__input" id="form-occupation" 
-            name="form-occupation" placeholder="Исследователь океана">
+            <div class="form__field">
+              <input type="text" class="form__input" id="form-occupation" 
+              name="form-occupation" placeholder="Исследователь океана">
 
-            <label for="form-occupation"></label>
-          </div>
+              <label for="form-occupation"></label>
+            </div>
 
-          <input type="submit" class="form__button" value="Сохранить" name="form__button">
-        </form>
+            <input type="submit" class="form__button" value="Сохранить" name="form__button">
+          </form>
+        </div>
       </div>
-    </div>
-
+    </main>
     <footer class="footer">
       <p class="footer__copyright">	&copy; 2022 Mesto Russia</p>
     </footer>
