@@ -30,7 +30,7 @@
       </section>
 
       <section class="elements">
-      <div class="element">
+<!--      <div class="element">
         <img src="images/kirill-pershin-1088404-unsplash.jpg" alt="заброшенный монастырь" class="element__pic">
         <div class="element__info">
           <h2 class="element__name">Карачаевск</h2>
@@ -77,9 +77,10 @@
           <button type="button" class="element__like"></button>
         </div>
       </div>
+    -->
       </section>
 
-      <div class="popup popup_opened">
+      <div class="popup" id="popup-profile">
         <button type="button" class="popup__exit-button"></button>
 
         <div class="popup__container">
@@ -88,14 +89,14 @@
           <form class="form" name="user-form">
             <div class="form__field">
               <input type="text" class="form__input" id="form-name" 
-              name="form-name" placeholder="Жак-Ив Кусто">
+              name="form-name" >
 
               <label for="form-name"></label>
             </div>
 
             <div class="form__field">
               <input type="text" class="form__input" id="form-occupation" 
-              name="form-occupation" placeholder="Исследователь океана">
+              name="form-occupation" >
 
               <label for="form-occupation"></label>
             </div>
@@ -104,9 +105,61 @@
           </form>
         </div>
       </div>
+
+      <div class="popup" id="popup-add">
+        <button type="button" class="popup__exit-button"></button>
+
+        <div class="popup__container">
+          <h2 class="popup__heading">Новое место</h2>
+
+          <form class="form" name="user-form">
+            <div class="form__field">
+              <input type="text" class="form__input" id="img-name" 
+              name="img-name" placeholder="Название">
+
+              <label for="img-name"></label>
+            </div>
+
+            <div class="form__field">
+              <input type="text" class="form__input" id="img-link" 
+              name="img-link" placeholder="Ссылка на картинку">
+
+              <label for="img-link"></label>
+            </div>
+
+            <input type="submit" class="form__button" value="Создать" name="form__button" id="add-button">
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer__copyright">	&copy; 2022 Mesto Russia</p>
     </footer>
+
+    <template id="element-template">
+      <div class="element">
+        <button type="button" class="element__delete"></button>
+
+        <img  class="element__pic">
+
+        <div class="element__info">
+          <h2 class="element__name"></h2>
+
+          <button type="button" class="element__like"></button>
+        </div>
+
+        <div class="popup popup_img">
+          <div class="element__container">
+            <button type="button" class="popup__exit-button popup__exit-button_modal"></button>
+          
+            <img class="element__modal-pic">
+          
+            <p class="element__modal-name">
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <script src="./script.js"></script>
   </body>
 </html>

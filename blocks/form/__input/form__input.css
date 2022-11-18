@@ -12,7 +12,7 @@
   outline: none;
 }
 
-.form__input::placeholder {
+/*.form__input::placeholder {
   font-family: 'Inter', Arial, sans-serif;
   font-size: 14px;
   line-height: 17px;
@@ -25,7 +25,7 @@
   line-height: 17px;
   color: black;
 } 
-
+*/
 @media screen and (max-width: 580px) {
   .form__input{
     width: 238px;

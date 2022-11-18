@@ -1,6 +1,7 @@
 .popup__exit-button{
   background: url(../../../images/Close-Icon.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   width: 32px;
   height: 32px;
   border: none;
@@ -22,4 +23,10 @@
     left: calc(50% + 141px - 20px);
     top: calc(50% - 161px - 20px - 16px);
   }
+}
+
+.popup__exit-button_modal{
+  position: relative;
+  top: -8px;
+  left: calc(100% + 8px);
 }

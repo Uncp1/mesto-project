@@ -1,0 +1,10 @@
+.element__modal-pic{
+  max-width: 75vw;
+  max-height: 75vh;
+}
+
+@media screen and (max-width: 580px) {
+  .element__modal-pic{
+    max-width: 240px;
+  }
+}
