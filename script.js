@@ -1,12 +1,13 @@
 const buttonOpenAddCardForm = document.querySelector('.profile__add-button');
 const buttonOpenEditProfileForm = document.querySelector('.profile__edit-button');
-const AddCardForm = document.querySelector('#img-form');
+const formAddCard = document.querySelector('#img-form');
 const popupWindow = document.querySelectorAll('.popup');
 const popupProfile = document.querySelector('#popup-profile');
 const popupAddCard = document.querySelector('#popup-add');
-const profileForm = document.querySelector('#user-form');
+const formProfile = document.querySelector('#user-form');
 const elementsContainer = document.querySelector('.elements')
 const popupImg = document.querySelector('.popup_img');
+const cardPopupImg = popupImg.querySelector('.element__modal-pic');
 const elementTemplate = document.querySelector('#element-template').content;
 const profileName = document.querySelector('.profile__name');
 const profileOccupation= document.querySelector('.profile__occupation');
@@ -42,10 +43,9 @@ function createCard(name, link) {
 
   element.querySelector('.element__pic').addEventListener('click', function() {
     openPopup(popupImg);
-    cardPopupImg = popupImg.querySelector('.element__modal-pic');
     popupImg.querySelector('.element__modal-name').textContent = name;
     cardPopupImg.setAttribute('src', link);
-    cardPopupImg.setAttribute('src', link);
+    cardPopupImg.setAttribute('alt', name);
   }); 
 
   return(element);
@@ -54,7 +54,6 @@ function createCard(name, link) {
 function addCard(name, link){
   const elementCard= createCard(name, link);
   elementsContainer.prepend(elementCard);
-  return(name, link);
 }
 
 initialCards.forEach((item) => {
@@ -78,17 +77,17 @@ buttonOpenEditProfileForm.addEventListener('click', function(){
   openPopup(popupProfile);
 });
 
-profileForm.addEventListener('submit', function (evt) {
+formProfile.addEventListener('submit', function (evt) {
   evt.preventDefault();
   profileName.textContent = editFormName.value;
   profileOccupation.textContent = editFormOccupation.value;
   closePopup(popupProfile);
 });
 
-AddCardForm.addEventListener('submit', function (evt) {
+formAddCard.addEventListener('submit', function (evt) {
   evt.preventDefault();
   addCard(formName.value, formLink.value);
-  AddCardForm.reset();
+  formAddCard.reset();
   closePopup(popupAddCard);
 });
 
